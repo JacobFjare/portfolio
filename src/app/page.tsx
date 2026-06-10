@@ -37,14 +37,16 @@ export default function Home() {
         <div className="section-content section-content--hero">
           <p className="eyebrow">Modern portfolio / subterranean field notes</p>
           <h1 id="intro-heading">Lorem Ipsum Developer</h1>
-          <p className="lead-copy">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            commodo, nibh et luctus cursus, velit justo luctus mi, vitae
-            tincidunt magna est sed augue.
-          </p>
-          <div className="hero-actions" aria-label="Primary links">
-            <a href="#projects">View work</a>
-            <a href="#contact">Contact</a>
+          <div className="hero-copy">
+            <p className="lead-copy">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              commodo, nibh et luctus cursus, velit justo luctus mi, vitae
+              tincidunt magna est sed augue.
+            </p>
+            <div className="hero-actions" aria-label="Primary links">
+              <a href="#projects">View work</a>
+              <a href="#contact">Contact</a>
+            </div>
           </div>
         </div>
 
@@ -59,10 +61,9 @@ export default function Home() {
         aria-labelledby="about-heading"
       >
         <div className="strata strata--surface" />
-        <div className="roots roots--left" />
-        <div className="roots roots--right" />
         <div className="stone stone--one" />
         <div className="stone stone--two" />
+        <div className="stone stone--three" />
 
         <div className="section-content section-content--right content-panel">
           <p className="eyebrow">Surface layer</p>
@@ -89,6 +90,8 @@ export default function Home() {
         <div className="ore ore--one" />
         <div className="ore ore--two" />
         <div className="ore ore--three" />
+        <div className="ore ore--four" />
+        <div className="ore ore--five" />
 
         <div className="section-content section-content--wide">
           <div className="content-panel content-panel--intro">
@@ -116,19 +119,15 @@ export default function Home() {
         className="depth-section depth-section--fossil"
         aria-labelledby="experience-heading"
       >
-        <div className="fossil fossil--ribcage" aria-hidden="true">
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-        </div>
-        <div className="fossil fossil--skull" aria-hidden="true" />
-        <div className="crack crack--one" />
-        <div className="crack crack--two" />
+        <div className="lapis lapis--one" />
+        <div className="lapis lapis--two" />
+        <div className="lapis lapis--three" />
+        <div className="lapis lapis--four" />
+        <div className="lapis lapis--five" />
+        <div className="lapis lapis--six" />
 
         <div className="section-content section-content--left content-panel">
-          <p className="eyebrow">Fossil layer</p>
+          <p className="eyebrow">Lapis layer</p>
           <h2 id="experience-heading">Experience and skills</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -151,6 +150,8 @@ export default function Home() {
         <div className="crystal crystal--one" />
         <div className="crystal crystal--two" />
         <div className="crystal crystal--three" />
+        <div className="crystal crystal--four" />
+        <div className="crystal crystal--five" />
 
         <div className="section-content section-content--center content-panel content-panel--contact">
           <p className="eyebrow">Deep cavern</p>

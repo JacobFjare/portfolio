@@ -86,54 +86,77 @@ a {
 
 .depth-section--surface {
   background:
-    linear-gradient(180deg, #70543b 0%, #534131 40%, #4a4038 100%),
-    repeating-linear-gradient(-7deg, rgba(255, 255, 255, 0.05) 0 2px, transparent 2px 26px);
+    radial-gradient(ellipse at 15% 76%, rgba(47, 35, 27, 0.48), transparent 18rem),
+    radial-gradient(ellipse at 84% 20%, rgba(111, 83, 58, 0.42), transparent 24rem),
+    linear-gradient(180deg, #75573c 0%, #634932 42%, #513d31 100%);
 }
 
 .depth-section--surface::before {
   background:
-    radial-gradient(circle at 20% 22%, rgba(48, 36, 25, 0.5) 0 7px, transparent 8px),
-    radial-gradient(circle at 85% 74%, rgba(31, 25, 22, 0.45) 0 11px, transparent 12px),
-    repeating-linear-gradient(180deg, transparent 0 70px, rgba(255, 231, 180, 0.08) 72px 78px, transparent 80px 148px);
+    radial-gradient(ellipse at 13% 78%, rgba(121, 124, 112, 0.55) 0 2.4rem, transparent 2.55rem),
+    radial-gradient(ellipse at 80% 78%, rgba(88, 91, 84, 0.5) 0 3.4rem, transparent 3.55rem),
+    radial-gradient(circle at 20% 22%, rgba(45, 31, 22, 0.34) 0 0.55rem, transparent 0.65rem),
+    radial-gradient(circle at 86% 36%, rgba(156, 154, 139, 0.36) 0 0.9rem, transparent 1rem),
+    linear-gradient(180deg, rgba(255, 232, 184, 0.06), transparent 44%);
 }
 
 .depth-section--projects {
   background:
-    radial-gradient(circle at 88% 16%, rgba(114, 207, 190, 0.18), transparent 22rem),
-    radial-gradient(circle at 8% 76%, rgba(215, 157, 79, 0.14), transparent 24rem),
-    linear-gradient(180deg, #3e3734 0%, #2d292b 50%, #211f24 100%);
+    radial-gradient(circle at 87% 18%, rgba(224, 176, 83, 0.34) 0 0.8rem, transparent 0.95rem),
+    radial-gradient(circle at 11% 71%, rgba(216, 132, 69, 0.2) 0 0.7rem, transparent 0.8rem),
+    radial-gradient(circle at 66% 82%, rgba(234, 181, 78, 0.32) 0 0.75rem, transparent 0.9rem),
+    radial-gradient(circle at 35% 22%, rgba(240, 189, 90, 0.22) 0 0.55rem, transparent 0.7rem),
+    radial-gradient(circle at 76% 42%, rgba(231, 174, 69, 0.18) 0 0.45rem, transparent 0.6rem),
+    radial-gradient(ellipse at 80% 18%, rgba(105, 119, 113, 0.32), transparent 24rem),
+    linear-gradient(180deg, #4d453e 0%, #383838 48%, #2e3132 100%);
 }
 
 .depth-section--projects::before {
   background:
-    repeating-linear-gradient(168deg, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px 42px),
-    repeating-linear-gradient(5deg, rgba(0, 0, 0, 0.08) 0 1px, transparent 2px 36px);
+    radial-gradient(ellipse at 17% 24%, rgba(31, 29, 27, 0.34) 0 9rem, transparent 9.2rem),
+    radial-gradient(ellipse at 88% 72%, rgba(28, 31, 31, 0.38) 0 12rem, transparent 12.2rem),
+    radial-gradient(circle at 27% 32%, rgba(178, 180, 166, 0.16) 0 0.5rem, transparent 0.6rem),
+    radial-gradient(circle at 74% 54%, rgba(108, 111, 103, 0.22) 0 1.4rem, transparent 1.55rem);
 }
 
 .depth-section--fossil {
   background:
-    radial-gradient(circle at 70% 52%, rgba(216, 200, 167, 0.12), transparent 21rem),
-    linear-gradient(180deg, #242127 0%, #1a171d 58%, #15121a 100%);
+    radial-gradient(circle at 78% 17%, rgba(222, 170, 72, 0.18) 0 0.55rem, transparent 0.65rem),
+    radial-gradient(circle at 18% 83%, rgba(154, 89, 55, 0.18) 0 0.75rem, transparent 0.85rem),
+    radial-gradient(circle at 69% 70%, rgba(194, 139, 55, 0.13) 0 0.45rem, transparent 0.55rem),
+    radial-gradient(ellipse at 70% 52%, rgba(216, 200, 167, 0.12), transparent 26rem),
+    linear-gradient(180deg, #303236 0%, #282b30 53%, #202229 100%);
 }
 
 .depth-section--fossil::before {
   background:
-    repeating-linear-gradient(175deg, transparent 0 48px, rgba(216, 200, 167, 0.05) 49px 53px, transparent 54px 118px),
-    radial-gradient(circle at 18% 24%, rgba(0, 0, 0, 0.35), transparent 18rem);
+    radial-gradient(ellipse at 17% 22%, rgba(0, 0, 0, 0.28), transparent 20rem),
+    radial-gradient(ellipse at 82% 78%, rgba(0, 0, 0, 0.28), transparent 24rem),
+    radial-gradient(circle at 35% 27%, rgba(156, 158, 150, 0.18) 0 1rem, transparent 1.15rem),
+    radial-gradient(circle at 53% 84%, rgba(109, 112, 108, 0.2) 0 1.6rem, transparent 1.75rem);
 }
 
 .depth-section--contact {
   justify-content: center;
   background:
-    radial-gradient(circle at 50% 76%, rgba(95, 232, 210, 0.22), transparent 22rem),
-    radial-gradient(circle at 80% 22%, rgba(153, 97, 222, 0.15), transparent 18rem),
-    linear-gradient(180deg, #15121a 0%, #0e0d12 100%);
+    radial-gradient(circle at 50% 86%, rgba(95, 232, 210, 0.18), transparent 21rem),
+    radial-gradient(circle at 80% 22%, rgba(153, 97, 222, 0.11), transparent 18rem),
+    linear-gradient(180deg, #141219 0%, #09090d 100%);
 }
 
 .depth-section--contact::before {
   background:
-    radial-gradient(ellipse at 50% 100%, rgba(0, 0, 0, 0.7) 0 16%, transparent 17%),
-    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.025) 0 1px, transparent 1px 80px);
+    radial-gradient(ellipse at 50% 108%, rgba(0, 0, 0, 0.58) 0 13%, transparent 14%),
+    radial-gradient(circle at 22% 74%, rgba(91, 232, 213, 0.12) 0 0.45rem, transparent 0.55rem),
+    radial-gradient(circle at 74% 68%, rgba(133, 104, 255, 0.14) 0 0.55rem, transparent 0.65rem),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.012), transparent 24%, rgba(255, 255, 255, 0.014) 72%, transparent);
+}
+
+.depth-section--contact::after {
+  background:
+    radial-gradient(circle at 18% 84%, rgba(106, 255, 232, 0.18) 0 0.35rem, transparent 0.45rem),
+    radial-gradient(circle at 82% 82%, rgba(185, 247, 255, 0.14) 0 0.45rem, transparent 0.55rem),
+    radial-gradient(circle at 72% 64%, rgba(185, 247, 255, 0.1) 0 0.25rem, transparent 0.35rem);
 }
 
 .section-content {
@@ -226,9 +249,20 @@ p {
 }
 
 .lead-copy {
-  max-width: 42rem;
+  max-width: 38rem;
+  margin-bottom: 0;
   color: rgba(36, 25, 17, 0.82);
   font-size: clamp(1.1rem, 2vw, 1.35rem);
+}
+
+.hero-copy {
+  width: min(100%, 40rem);
+  margin-top: 0.75rem;
+  border-radius: 1.45rem;
+  background: linear-gradient(90deg, rgba(255, 241, 207, 0.48), rgba(255, 241, 207, 0.18) 68%, transparent);
+  box-shadow: 0 1.5rem 4rem rgba(78, 55, 33, 0.1);
+  padding: 0.7rem 1rem 1rem;
+  backdrop-filter: blur(5px);
 }
 
 .hero-actions,
@@ -236,7 +270,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 0.85rem;
-  margin-top: 1.75rem;
+  margin-top: 1.15rem;
 }
 
 .hero-actions a,
@@ -351,11 +385,9 @@ p {
 }
 
 .strata,
-.roots,
 .stone,
 .ore,
-.fossil,
-.crack,
+.lapis,
 .crystal {
   position: absolute;
   pointer-events: none;
@@ -369,84 +401,47 @@ p {
 
 .strata--surface {
   background:
-    repeating-linear-gradient(177deg, rgba(255, 225, 161, 0.12) 0 4px, transparent 5px 42px),
-    linear-gradient(180deg, transparent, rgba(20, 14, 12, 0.3));
+    radial-gradient(ellipse at 18% 72%, rgba(36, 27, 22, 0.24) 0 17rem, transparent 17.3rem),
+    radial-gradient(ellipse at 74% 88%, rgba(35, 28, 24, 0.28) 0 21rem, transparent 21.4rem),
+    linear-gradient(180deg, transparent, rgba(20, 14, 12, 0.22));
 }
 
 .strata--deep {
   inset: 0 -8vw;
   height: auto;
-  background: repeating-linear-gradient(172deg, transparent 0 58px, rgba(247, 198, 118, 0.07) 59px 64px, transparent 65px 132px);
-  opacity: 0.8;
-}
-
-.roots {
-  top: 0;
-  z-index: 2;
-  width: 16rem;
-  height: 22rem;
-  border-color: rgba(40, 25, 12, 0.55);
-  border-style: solid;
-  border-width: 0 0.35rem 0.35rem 0;
-  border-radius: 0 0 90% 0;
-}
-
-.roots--left {
-  left: 8%;
-  transform: rotate(8deg);
-}
-
-.roots--right {
-  right: 12%;
-  transform: scaleX(-1) rotate(14deg);
-}
-
-.roots::before,
-.roots::after {
-  position: absolute;
-  border-color: inherit;
-  border-style: solid;
-  content: "";
-}
-
-.roots::before {
-  right: 1.5rem;
-  bottom: 3rem;
-  width: 7rem;
-  height: 7rem;
-  border-width: 0 0.22rem 0.22rem 0;
-  border-radius: 0 0 100% 0;
-  transform: rotate(-30deg);
-}
-
-.roots::after {
-  right: 3rem;
-  bottom: 8rem;
-  width: 5rem;
-  height: 5rem;
-  border-width: 0 0.18rem 0.18rem 0;
-  border-radius: 0 0 100% 0;
-  transform: rotate(34deg);
+  background:
+    radial-gradient(ellipse at 22% 18%, rgba(29, 29, 28, 0.26) 0 18rem, transparent 18.3rem),
+    radial-gradient(ellipse at 82% 75%, rgba(17, 19, 20, 0.28) 0 24rem, transparent 24.4rem),
+    linear-gradient(180deg, rgba(255, 222, 157, 0.035), transparent 40%, rgba(0, 0, 0, 0.18));
+  opacity: 0.9;
 }
 
 .stone {
   z-index: 2;
   border-radius: 999px 70% 999px 80%;
-  background: rgba(30, 24, 21, 0.35);
+  background: linear-gradient(135deg, rgba(143, 145, 132, 0.42), rgba(48, 48, 44, 0.32));
 }
 
 .stone--one {
-  left: 12%;
-  bottom: 18%;
-  width: 5rem;
-  height: 3.2rem;
+  left: 10%;
+  bottom: 14%;
+  width: 6rem;
+  height: 3rem;
 }
 
 .stone--two {
-  right: 16%;
-  bottom: 12%;
-  width: 7rem;
-  height: 4rem;
+  right: 12%;
+  bottom: 26%;
+  width: 8rem;
+  height: 4.3rem;
+}
+
+.stone--three {
+  left: 44%;
+  bottom: 8%;
+  width: 4.5rem;
+  height: 2.5rem;
+  opacity: 0.58;
 }
 
 .ore {
@@ -454,8 +449,8 @@ p {
   width: 1.1rem;
   height: 1.1rem;
   border-radius: 45% 55% 50% 50%;
-  background: #73deca;
-  box-shadow: 0 0 1.5rem rgba(115, 222, 202, 0.55);
+  background: #d4a653;
+  box-shadow: 0 0 1.5rem rgba(212, 166, 83, 0.34);
 }
 
 .ore--one {
@@ -466,15 +461,33 @@ p {
 .ore--two {
   left: 9%;
   bottom: 28%;
-  background: #f0b05f;
-  box-shadow: 0 0 1.5rem rgba(240, 176, 95, 0.45);
+  background: #a05d42;
+  box-shadow: 0 0 1.5rem rgba(160, 93, 66, 0.34);
 }
 
 .ore--three {
   right: 33%;
   bottom: 17%;
-  background: #b795ff;
-  box-shadow: 0 0 1.5rem rgba(183, 149, 255, 0.45);
+  background: #d7a94e;
+  box-shadow: 0 0 1.5rem rgba(215, 169, 78, 0.32);
+}
+
+.ore--four {
+  left: 24%;
+  top: 19%;
+  width: 1.35rem;
+  height: 1.35rem;
+  background: #e2b45b;
+  box-shadow: 0 0 2rem rgba(226, 180, 91, 0.42);
+}
+
+.ore--five {
+  right: 9%;
+  bottom: 35%;
+  width: 1.45rem;
+  height: 1.45rem;
+  background: #f0bd5a;
+  box-shadow: 0 0 2.2rem rgba(240, 189, 90, 0.44);
 }
 
 .project-grid {
@@ -497,6 +510,18 @@ p {
   backdrop-filter: blur(16px);
 }
 
+.project-card::before {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5.5rem;
+  background:
+    radial-gradient(circle at 16% 32%, rgba(236, 185, 86, 0.32) 0 0.62rem, transparent 0.72rem),
+    radial-gradient(circle at 82% 42%, rgba(221, 166, 76, 0.2) 0 0.38rem, transparent 0.48rem),
+    linear-gradient(165deg, rgba(210, 162, 70, 0.18), transparent 38%);
+  clip-path: polygon(0 0, 100% 0, 100% 56%, 82% 48%, 64% 60%, 47% 50%, 26% 66%, 0 52%);
+  content: "";
+}
+
 .project-card::after {
   position: absolute;
   right: -3rem;
@@ -509,116 +534,82 @@ p {
 }
 
 .project-card__marker {
+  position: relative;
+  z-index: 1;
   display: block;
   width: 2.2rem;
   height: 2.2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3.2rem;
   border-radius: 0.7rem;
-  background: linear-gradient(135deg, #73deca, #f0b05f);
-  box-shadow: 0 0 2rem rgba(115, 222, 202, 0.28);
+  background: linear-gradient(135deg, #f2c36a, #bd7b37);
+  box-shadow: 0 0 2rem rgba(242, 195, 106, 0.36);
   transform: rotate(12deg);
 }
 
-.fossil {
+.project-card h3,
+.project-card p {
+  position: relative;
   z-index: 1;
-  opacity: 0.38;
 }
 
-.fossil--ribcage {
-  right: 6%;
-  bottom: 15%;
-  width: min(34rem, 70vw);
-  height: 15rem;
-  border-top: 0.55rem solid var(--bone);
-  border-radius: 50% 50% 0 0;
-  transform: rotate(-8deg);
+.lapis {
+  z-index: 2;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 45% 55% 48% 52%;
+  background: #2f67d8;
+  box-shadow: 0 0 1.8rem rgba(47, 103, 216, 0.42);
 }
 
-.fossil--ribcage span {
+.lapis::after {
   position: absolute;
-  top: 0.5rem;
-  width: 0.45rem;
-  height: 10rem;
+  inset: 28% 18% auto auto;
+  width: 0.28rem;
+  height: 0.28rem;
   border-radius: 999px;
-  background: var(--bone);
-  transform-origin: top;
-}
-
-.fossil--ribcage span:nth-child(1) {
-  left: 18%;
-  transform: rotate(28deg);
-}
-
-.fossil--ribcage span:nth-child(2) {
-  left: 32%;
-  transform: rotate(14deg);
-}
-
-.fossil--ribcage span:nth-child(3) {
-  left: 48%;
-}
-
-.fossil--ribcage span:nth-child(4) {
-  left: 64%;
-  transform: rotate(-14deg);
-}
-
-.fossil--ribcage span:nth-child(5) {
-  left: 78%;
-  transform: rotate(-28deg);
-}
-
-.fossil--skull {
-  right: 10%;
-  bottom: 8%;
-  width: 8rem;
-  height: 5.5rem;
-  border: 0.45rem solid var(--bone);
-  border-radius: 60% 48% 52% 46%;
-  transform: rotate(12deg);
-}
-
-.fossil--skull::before,
-.fossil--skull::after {
-  position: absolute;
-  border-radius: 999px;
-  background: var(--bone);
+  background: rgba(185, 220, 255, 0.75);
   content: "";
 }
 
-.fossil--skull::before {
-  top: 1.2rem;
-  left: 1.4rem;
+.lapis--one {
+  right: 18%;
+  top: 25%;
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.lapis--two {
+  right: 31%;
+  bottom: 28%;
+}
+
+.lapis--three {
+  left: 52%;
+  top: 18%;
   width: 0.9rem;
   height: 0.9rem;
-  box-shadow: 2.3rem 0 0 var(--bone);
 }
 
-.fossil--skull::after {
-  right: -2.1rem;
-  bottom: 0.7rem;
-  width: 3rem;
-  height: 1.4rem;
+.lapis--four {
+  right: 8%;
+  bottom: 43%;
+  width: 1rem;
+  height: 1rem;
 }
 
-.crack {
-  z-index: 1;
-  width: 14rem;
-  height: 16rem;
-  opacity: 0.35;
-  clip-path: polygon(48% 0, 56% 28%, 45% 29%, 55% 54%, 40% 55%, 50% 100%, 34% 50%, 48% 49%, 36% 22%, 46% 22%);
-  background: #060509;
+.lapis--five {
+  left: 67%;
+  bottom: 15%;
+  width: 1.35rem;
+  height: 1.35rem;
 }
 
-.crack--one {
-  top: 18%;
-  left: 9%;
-}
-
-.crack--two {
-  right: 23%;
-  top: 9%;
-  transform: rotate(34deg) scale(0.7);
+.lapis--six {
+  left: 43%;
+  bottom: 35%;
+  width: 0.75rem;
+  height: 0.75rem;
+  opacity: 0.8;
 }
 
 .skill-list {
@@ -646,9 +637,18 @@ p {
   width: clamp(3rem, 9vw, 7rem);
   height: clamp(8rem, 18vw, 15rem);
   clip-path: polygon(50% 0, 88% 28%, 72% 100%, 28% 100%, 12% 28%);
-  background: linear-gradient(145deg, rgba(132, 255, 231, 0.9), rgba(80, 113, 236, 0.18));
-  box-shadow: 0 0 4rem rgba(95, 232, 210, 0.34);
-  opacity: 0.76;
+  background:
+    linear-gradient(105deg, rgba(255, 255, 255, 0.34) 0 18%, transparent 19% 100%),
+    linear-gradient(145deg, rgba(132, 255, 231, 0.9), rgba(80, 113, 236, 0.18));
+  box-shadow: 0 0 4.5rem rgba(95, 232, 210, 0.42);
+  opacity: 0.82;
+}
+
+.crystal::before {
+  position: absolute;
+  inset: 24% 42% 0 45%;
+  background: rgba(255, 255, 255, 0.18);
+  content: "";
 }
 
 .crystal--one {
@@ -668,6 +668,28 @@ p {
   height: clamp(5rem, 12vw, 9rem);
   opacity: 0.45;
   transform: rotate(-18deg);
+}
+
+.crystal--four {
+  left: 24%;
+  bottom: -2rem;
+  width: clamp(2rem, 5vw, 4.5rem);
+  height: clamp(5.5rem, 13vw, 10rem);
+  opacity: 0.58;
+  transform: rotate(16deg);
+}
+
+.crystal--five {
+  right: 7%;
+  bottom: -2.2rem;
+  width: clamp(2.4rem, 7vw, 5.2rem);
+  height: clamp(6rem, 15vw, 12rem);
+  background:
+    linear-gradient(105deg, rgba(255, 255, 255, 0.3) 0 16%, transparent 17% 100%),
+    linear-gradient(145deg, rgba(166, 220, 255, 0.88), rgba(80, 113, 236, 0.22));
+  box-shadow: 0 0 4.5rem rgba(133, 183, 255, 0.36);
+  opacity: 0.68;
+  transform: rotate(-12deg);
 }
 
 @media (max-width: 900px) {
@@ -693,7 +715,7 @@ p {
   }
 
   .lead-copy {
-    color: rgba(255, 247, 231, 0.86);
+    color: rgba(36, 25, 17, 0.86);
   }
 
   .project-grid {
@@ -714,22 +736,37 @@ p {
     width: 90vw;
   }
 
-  .roots,
   .stone--two,
+  .stone--three,
   .ore--three,
-  .crack--two {
+  .ore--four,
+  .ore--five,
+  .lapis--four,
+  .lapis--six {
     display: none;
   }
+}
 
-  .fossil--ribcage {
-    right: -30%;
-    bottom: 7%;
-    transform: rotate(-8deg) scale(0.72);
+@media (max-height: 760px) and (min-width: 901px) {
+  .depth-section--peak {
+    padding-top: 4rem;
   }
 
-  .fossil--skull {
-    right: 4%;
-    transform: rotate(12deg) scale(0.72);
+  .section-content--hero {
+    transform: translateY(-1.25rem);
+  }
+
+  h1 {
+    font-size: clamp(3rem, 7vw, 6rem);
+  }
+
+  .hero-copy {
+    max-width: 36rem;
+  }
+
+  .lead-copy {
+    font-size: 1.08rem;
+    line-height: 1.55;
   }
 }
 
