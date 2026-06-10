@@ -47,11 +47,20 @@ jobs:
             ${{ steps.image.outputs.image }}
             ${{ env.IMAGE_NAME }}:latest
 
+      - name: Generate GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.PROCTOR_DEPLOY_APP_ID }}
+          private-key: ${{ secrets.PROCTOR_DEPLOY_APP_PRIVATE_KEY }}
+          owner: JacobFjare
+          repositories: proctor-infra
+
       - name: Check out infra repository
         uses: actions/checkout@v4
         with:
           repository: ${{ env.INFRA_REPO }}
-          token: ${{ secrets.PROCTOR_INFRA_TOKEN }}
+          token: ${{ steps.app-token.outputs.token }}
           path: proctor-infra
           ref: ${{ env.INFRA_BRANCH }}
 
@@ -63,7 +72,7 @@ jobs:
       - name: Create pull request in infra repository
         uses: peter-evans/create-pull-request@v7
         with:
-          token: ${{ secrets.PROCTOR_INFRA_TOKEN }}
+          token: ${{ steps.app-token.outputs.token }}
           path: proctor-infra
           branch: update-portfolio-${{ steps.image.outputs.tag }}
           base: ${{ env.INFRA_BRANCH }}
