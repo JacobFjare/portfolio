@@ -1,4 +1,4 @@
-name: Build and publish image
+name: Build image and update infra
 
 on:
   push:
@@ -12,14 +12,24 @@ permissions:
 
 env:
   IMAGE_NAME: ghcr.io/jacobfjare/portfolio
+  INFRA_REPO: JacobFjare/proctor-infra
+  INFRA_BRANCH: main
+  KUSTOMIZATION_PATH: gitops/apps/portfolio/kustomization.yaml
 
 jobs:
-  build:
+  build-and-update:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out repository
+      - name: Check out portfolio repository
         uses: actions/checkout@v4
+
+      - name: Compute image tag
+        id: image
+        run: |
+          SHORT_SHA="${GITHUB_SHA::7}"
+          echo "tag=sha-${SHORT_SHA}" >> "$GITHUB_OUTPUT"
+          echo "image=${IMAGE_NAME}:sha-${SHORT_SHA}" >> "$GITHUB_OUTPUT"
 
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@v3
@@ -28,19 +38,43 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Extract Docker metadata
-        id: meta
-        uses: docker/metadata-action@v5
-        with:
-          images: ${{ env.IMAGE_NAME }}
-          tags: |
-            type=sha,prefix=sha-
-            type=raw,value=latest
-
       - name: Build and push image
         uses: docker/build-push-action@v6
         with:
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: |
+            ${{ steps.image.outputs.image }}
+            ${{ env.IMAGE_NAME }}:latest
+
+      - name: Check out infra repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.INFRA_REPO }}
+          token: ${{ secrets.PROCTOR_INFRA_TOKEN }}
+          path: proctor-infra
+          ref: ${{ env.INFRA_BRANCH }}
+
+      - name: Update portfolio image tag
+        working-directory: proctor-infra
+        run: |
+          sed -i "s/newTag: .*/newTag: ${{ steps.image.outputs.tag }}/" "${KUSTOMIZATION_PATH}"
+
+      - name: Create pull request in infra repository
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.PROCTOR_INFRA_TOKEN }}
+          path: proctor-infra
+          branch: update-portfolio-${{ steps.image.outputs.tag }}
+          base: ${{ env.INFRA_BRANCH }}
+          title: "Deploy portfolio ${{ steps.image.outputs.tag }}"
+          commit-message: "Deploy portfolio ${{ steps.image.outputs.tag }}"
+          body: |
+            Updates the portfolio image tag to:
+
+            `${{ steps.image.outputs.image }}`
+
+            Built from portfolio commit `${{ github.sha }}`.
+          labels: |
+            deployment
+            portfolio
