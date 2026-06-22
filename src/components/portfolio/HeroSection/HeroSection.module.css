@@ -1,0 +1,166 @@
+.peakSection {
+  align-items: flex-start;
+  padding-top: clamp(5rem, 10vw, 8rem);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 64%, #725a43 64%, #47382e 100%),
+    linear-gradient(180deg, #9fc9db 0%, #f0d8a8 58%, #92704c 100%);
+}
+
+.peakSection::before {
+  background:
+    radial-gradient(circle at 20% 22%, rgba(255, 255, 255, 0.7) 0 2px, transparent 3px),
+    radial-gradient(circle at 75% 30%, rgba(255, 255, 255, 0.5) 0 1px, transparent 2px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.28), transparent 42%);
+}
+
+.heroContent {
+  margin-left: clamp(0rem, 4vw, 4rem);
+  padding-top: clamp(0rem, 4vw, 3rem);
+}
+
+.leadCopy {
+  max-width: 38rem;
+  margin-bottom: 0;
+  color: rgba(36, 25, 17, 0.82);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+}
+
+.heroCopy {
+  width: min(100%, 40rem);
+  margin-top: 0.75rem;
+  border-radius: 1.45rem;
+  background: linear-gradient(90deg, rgba(255, 241, 207, 0.48), rgba(255, 241, 207, 0.18) 68%, transparent);
+  box-shadow: 0 1.5rem 4rem rgba(78, 55, 33, 0.1);
+  padding: 0.7rem 1rem 1rem;
+  backdrop-filter: blur(5px);
+}
+
+.skyOrb {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.sun {
+  top: 10%;
+  right: 14%;
+  width: clamp(5rem, 12vw, 10rem);
+  aspect-ratio: 1;
+  border-radius: 999px;
+  background: radial-gradient(circle, #fff4c8 0 32%, #f0a04f 58%, rgba(240, 160, 79, 0) 70%);
+  filter: blur(0.5px);
+  opacity: 0.85;
+}
+
+.mountain {
+  position: absolute;
+  right: -8vw;
+  bottom: 26%;
+  z-index: 2;
+  width: 76vw;
+  height: 44vh;
+  clip-path: polygon(0 100%, 28% 42%, 42% 58%, 58% 16%, 100% 100%);
+  pointer-events: none;
+}
+
+.mountainBack {
+  right: 12vw;
+  bottom: 30%;
+  width: 64vw;
+  height: 36vh;
+  background: linear-gradient(135deg, #7f8d86, #4f5b58 64%);
+  opacity: 0.55;
+}
+
+.mountainFront {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0 12%, transparent 13% 100%),
+    linear-gradient(145deg, #5f6b64 0 38%, #36423f 39% 100%);
+}
+
+.ridgeLine {
+  position: absolute;
+  right: -12vw;
+  bottom: 18%;
+  z-index: 3;
+  width: 130vw;
+  height: 24vh;
+  background:
+    radial-gradient(circle at 20% 80%, #6a5039 0 12%, transparent 13%),
+    linear-gradient(170deg, transparent 0 28%, #6d5139 29% 100%);
+  clip-path: polygon(0 100%, 12% 52%, 21% 62%, 31% 35%, 44% 58%, 59% 28%, 72% 64%, 86% 42%, 100% 72%, 100% 100%);
+}
+
+.scrollCue {
+  position: absolute;
+  right: clamp(1.25rem, 5vw, 5rem);
+  bottom: 2rem;
+  z-index: 6;
+  color: rgba(255, 244, 223, 0.82);
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+}
+
+.scrollCue::after {
+  display: block;
+  width: 1px;
+  height: 4rem;
+  margin: 1rem auto 0;
+  background: currentColor;
+  content: "";
+  opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+  .peakSection {
+    min-height: 100vh;
+  }
+
+  .heroContent {
+    width: 100%;
+    margin-inline: 0;
+    padding-top: 2rem;
+  }
+
+  .leadCopy {
+    color: rgba(36, 25, 17, 0.86);
+  }
+
+  .mountain {
+    right: -28vw;
+    width: 115vw;
+  }
+
+  .mountainBack {
+    right: 3vw;
+    width: 90vw;
+  }
+}
+
+@media (max-height: 760px) and (min-width: 901px) {
+  .peakSection {
+    padding-top: 4rem;
+  }
+
+  .heroContent {
+    transform: translateY(-1.25rem);
+  }
+
+  .heroCopy {
+    max-width: 36rem;
+  }
+
+  .leadCopy {
+    font-size: 1.08rem;
+    line-height: 1.55;
+  }
+}
+
+@media (max-width: 560px) {
+  .scrollCue {
+    display: none;
+  }
+}

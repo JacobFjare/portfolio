@@ -1,0 +1,93 @@
+.contactSection {
+  justify-content: center;
+  background:
+    radial-gradient(circle at 50% 86%, rgba(95, 232, 210, 0.18), transparent 21rem),
+    radial-gradient(circle at 80% 22%, rgba(153, 97, 222, 0.11), transparent 18rem),
+    linear-gradient(180deg, #141219 0%, #09090d 100%);
+}
+
+.contactSection::before {
+  background:
+    radial-gradient(ellipse at 50% 108%, rgba(0, 0, 0, 0.58) 0 13%, transparent 14%),
+    radial-gradient(circle at 22% 74%, rgba(91, 232, 213, 0.12) 0 0.45rem, transparent 0.55rem),
+    radial-gradient(circle at 74% 68%, rgba(133, 104, 255, 0.14) 0 0.55rem, transparent 0.65rem),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.012), transparent 24%, rgba(255, 255, 255, 0.014) 72%, transparent);
+}
+
+.contactSection::after {
+  background:
+    radial-gradient(circle at 18% 84%, rgba(106, 255, 232, 0.18) 0 0.35rem, transparent 0.45rem),
+    radial-gradient(circle at 82% 82%, rgba(185, 247, 255, 0.14) 0 0.45rem, transparent 0.55rem),
+    radial-gradient(circle at 72% 64%, rgba(185, 247, 255, 0.1) 0 0.25rem, transparent 0.35rem);
+}
+
+.contactLinks {
+  justify-content: center;
+}
+
+.contactPanel {
+  background: rgba(11, 10, 15, 0.72);
+}
+
+.crystal {
+  position: absolute;
+  z-index: 2;
+  bottom: -1rem;
+  width: clamp(3rem, 9vw, 7rem);
+  height: clamp(8rem, 18vw, 15rem);
+  clip-path: polygon(50% 0, 88% 28%, 72% 100%, 28% 100%, 12% 28%);
+  background:
+    linear-gradient(105deg, rgba(255, 255, 255, 0.34) 0 18%, transparent 19% 100%),
+    linear-gradient(145deg, rgba(132, 255, 231, 0.9), rgba(80, 113, 236, 0.18));
+  box-shadow: 0 0 4.5rem rgba(95, 232, 210, 0.42);
+  opacity: 0.82;
+  pointer-events: none;
+}
+
+.crystal::before {
+  position: absolute;
+  inset: 24% 42% 0 45%;
+  background: rgba(255, 255, 255, 0.18);
+  content: "";
+}
+
+.crystalOne {
+  left: 13%;
+  transform: rotate(-8deg);
+}
+
+.crystalTwo {
+  right: 14%;
+  height: clamp(6rem, 14vw, 12rem);
+  transform: rotate(10deg);
+}
+
+.crystalThree {
+  right: 24%;
+  width: clamp(2rem, 6vw, 4rem);
+  height: clamp(5rem, 12vw, 9rem);
+  opacity: 0.45;
+  transform: rotate(-18deg);
+}
+
+.crystalFour {
+  left: 24%;
+  bottom: -2rem;
+  width: clamp(2rem, 5vw, 4.5rem);
+  height: clamp(5.5rem, 13vw, 10rem);
+  opacity: 0.58;
+  transform: rotate(16deg);
+}
+
+.crystalFive {
+  right: 7%;
+  bottom: -2.2rem;
+  width: clamp(2.4rem, 7vw, 5.2rem);
+  height: clamp(6rem, 15vw, 12rem);
+  background:
+    linear-gradient(105deg, rgba(255, 255, 255, 0.3) 0 16%, transparent 17% 100%),
+    linear-gradient(145deg, rgba(166, 220, 255, 0.88), rgba(80, 113, 236, 0.22));
+  box-shadow: 0 0 4.5rem rgba(133, 183, 255, 0.36);
+  opacity: 0.68;
+  transform: rotate(-12deg);
+}

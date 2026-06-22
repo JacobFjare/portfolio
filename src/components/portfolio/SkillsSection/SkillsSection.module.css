@@ -1,0 +1,104 @@
+.skillsSection {
+  background:
+    radial-gradient(circle at 78% 17%, rgba(222, 170, 72, 0.18) 0 0.55rem, transparent 0.65rem),
+    radial-gradient(circle at 18% 83%, rgba(154, 89, 55, 0.18) 0 0.75rem, transparent 0.85rem),
+    radial-gradient(circle at 69% 70%, rgba(194, 139, 55, 0.13) 0 0.45rem, transparent 0.55rem),
+    radial-gradient(ellipse at 70% 52%, rgba(216, 200, 167, 0.12), transparent 26rem),
+    linear-gradient(180deg, #303236 0%, #282b30 53%, #202229 100%);
+}
+
+.skillsSection::before {
+  background:
+    radial-gradient(ellipse at 17% 22%, rgba(0, 0, 0, 0.28), transparent 20rem),
+    radial-gradient(ellipse at 82% 78%, rgba(0, 0, 0, 0.28), transparent 24rem),
+    radial-gradient(circle at 35% 27%, rgba(156, 158, 150, 0.18) 0 1rem, transparent 1.15rem),
+    radial-gradient(circle at 53% 84%, rgba(109, 112, 108, 0.2) 0 1.6rem, transparent 1.75rem);
+}
+
+.lapis {
+  position: absolute;
+  z-index: 2;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 45% 55% 48% 52%;
+  background: #2f67d8;
+  box-shadow: 0 0 1.8rem rgba(47, 103, 216, 0.42);
+  pointer-events: none;
+}
+
+.lapis::after {
+  position: absolute;
+  inset: 28% 18% auto auto;
+  width: 0.28rem;
+  height: 0.28rem;
+  border-radius: 999px;
+  background: rgba(185, 220, 255, 0.75);
+  content: "";
+}
+
+.lapisOne {
+  right: 18%;
+  top: 25%;
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.lapisTwo {
+  right: 31%;
+  bottom: 28%;
+}
+
+.lapisThree {
+  left: 52%;
+  top: 18%;
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.lapisFour {
+  right: 8%;
+  bottom: 43%;
+  width: 1rem;
+  height: 1rem;
+}
+
+.lapisFive {
+  left: 67%;
+  bottom: 15%;
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.lapisSix {
+  left: 43%;
+  bottom: 35%;
+  width: 0.75rem;
+  height: 0.75rem;
+  opacity: 0.8;
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skillList li {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff4df;
+  font-size: 0.9rem;
+  font-weight: 800;
+  padding: 0.65rem 0.85rem;
+}
+
+@media (max-width: 900px) {
+  .lapisFour,
+  .lapisSix {
+    display: none;
+  }
+}
