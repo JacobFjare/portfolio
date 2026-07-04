@@ -1,64 +1,71 @@
 export const hero = {
-  eyebrow: "Modern portfolio / subterranean field notes",
-  title: "Lorem Ipsum Developer",
+  eyebrow: "Portfolio",
+  title: "Jacob Fjære — Developer",
   intro:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo, nibh et luctus cursus, velit justo luctus mi, vitae tincidunt magna est sed augue.",
+    "Bachelor student and developer interested in backend systems, databases, DevOps, and the logic behind reliable software. Currently exploring where I fit best while building a strong technical foundation.",
 };
 
 export const about = {
-  eyebrow: "Surface layer",
-  title: "About the explorer",
+  eyebrow: "About",
+  title: "About me",
   paragraphs: [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis, magna at sagittis porttitor, ex nulla dignissim mi, non vestibulum justo magna vitae lorem.",
-    "Sed non magna eget mi elementum dignissim. Maecenas ornare, lectus et faucibus gravida, massa mauris rutrum leo, ac rhoncus erat eros vitae nisl.",
+    "I am currently taking my bachelor’s degree in Grimstad, Norway, where I have worked with programming, software engineering, mathematics, physics, statistics, databases, DevOps, and some mobile and web development.",
+    "I am especially interested in backend development, database work, infrastructure, and the systems that make applications reliable behind the scenes. I have only recently started working more with frontend, and while design is not my main focus, I see it as a useful skill to understand and improve.",
+    "I have not locked myself into one specific path yet, but I am drawn toward technical problem solving, backend logic, automation, and tools that help developers build and ship better software.",
   ],
 };
 
 export const projectsIntro = {
-  eyebrow: "Mid-mountain layer",
+  eyebrow: "Projects",
   title: "Selected work",
-  body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat eros in ipsum hendrerit, quis volutpat tortor mattis.",
+  body: "A collection of projects, coursework, and experiments that reflect my interest in software development, backend systems, DevOps, and practical problem solving.",
 };
 
 export const projects = [
   {
-    title: "Project Stratum",
+    title: "Portfolio website",
     detail:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non arcu sed nibh cursus posuere.",
+      "A personal portfolio built with Next.js. While frontend is not my main focus, this project helps me improve my understanding of modern web development and how applications are structured and deployed.",
   },
   {
-    title: "Cavern Atlas",
+    title: "Bachelor coursework",
     detail:
-      "Praesent vitae velit at ipsum gravida posuere. Suspendisse potenti morbi luctus sem vitae urna.",
+      "University projects and assignments involving C++, C#, SQL, software engineering, UML, mathematics, statistics, physics, DevOps, and mobile or web development.",
   },
   {
-    title: "Fossil Engine",
+    title: "DevOps experiments",
     detail:
-      "Donec commodo erat et eros feugiat, sit amet pulvinar lorem luctus. Curabitur at mi fermentum.",
+      "Self-directed exploration of DevOps tools and workflows, including deployment concepts, automation, and tools such as Argo CD.",
   },
 ];
 
 export const skillsIntro = {
-  eyebrow: "Lapis layer",
-  title: "Experience and skills",
-  body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus, arcu ac tincidunt efficitur, mi ligula commodo dui, sed dictum massa mauris sit amet justo.",
+  eyebrow: "Technical direction",
+  title: "Experience and interests",
+  body: "My strongest interests are in backend development, databases, DevOps, and understanding how software systems work beneath the surface.",
 };
 
 export const skills = [
-  "Interface systems",
-  "Full-stack builds",
-  "Product thinking",
-  "Creative direction",
-  "Performance tuning",
-  "Design systems",
+  "C++",
+  "C#",
+  "SQL",
+  "Typescript",
+  "Backend logic",
+  "Databases",
+  "DevOps",
+  "Software engineering",
+  "UML",
+  "Git and GitHub",
+  "Math and statistics",
+  "Mobile/web basics",
 ];
 
 export const contact = {
-  eyebrow: "Deep cavern",
-  title: "Let's build something",
-  body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae purus ut nibh sollicitudin finibus. Morbi luctus ex et sem consequat, vitae facilisis enim volutpat.",
+  eyebrow: "Contact",
+  title: "Let's connect",
+  body: "I am open to opportunities, collaboration, and conversations about backend development, DevOps, databases, or software engineering in general.",
   links: [
-    { label: "hello@example.com", href: "mailto:hello@example.com" },
+    { label: "jacobfjare123@gmail.com", href: "mailto:jacobfjare123@gmail.com" },
     { label: "Resume", href: "https://example.com" },
   ],
 };
